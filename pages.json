@@ -1,0 +1,265 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "课程打卡系统",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"float": "right",
+							"text": "\ue656",
+							"fontSrc": "/static/index/add-icon.ttf",
+							"fontSize": "36upx",
+							"width": "100upx"
+						}]
+					},
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/login/forget",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		{
+			"path": "pages/personal-center/personal-center",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/personal-center/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/personal-center/modifyphone/modifyphone",
+			"style": {
+				"navigationBarTitleText": "修改手机号"
+			}
+		},
+		{
+			"path": "pages/personal-center/modifypassword/modifypassword",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/personal-center/feedback/feedback",
+			"style": {
+				"navigationBarTitleText": "用户反馈"
+			}
+		},
+		{
+			"path": "pages/personal-center/about/about",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/course/qrcode/qrcode",
+			"style": {
+				"navigationBarTitleText": "二维码"
+			}
+		},
+		
+		{
+			"path": "pages/course/join-course/join-course",
+			"style": {
+				"navigationBarTitleText": "加入班课"
+			}
+		},
+		{
+			"path": "pages/course/create-course/create-course",
+			"style": {
+				"navigationBarTitleText": "创建班课"
+			}
+		},
+		{
+			"path": "pages/course/course-detail-student/course-detail-student",
+			"style": {
+				"navigationBarTitleText": "课程详情",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/course/course-detail-teacher/course-detail-teacher",
+			"style": {
+				"navigationBarTitleText": "课程详情",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/course/signIn-detail-student/signIn-detail-student",
+			"style": {
+				"navigationBarTitleText": "签到详情",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/course/signIn-detail-teacher/signIn-detail-teacher",
+			"style": {
+				"navigationBarTitleText": "签到详情",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/course/signIn-record-list/signIn-record-list",
+			"style": {
+				"navigationBarTitleText": "签到历史记录",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/course/signIn-record-item/signIn-record-item",
+			"style": {
+				"navigationBarTitleText": "签到历史详情",
+				"enablePullDownRefresh": true
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "课程打卡系统",
+		"navigationBarBackgroundColor": "#4191ea",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#0081ff",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home_cur.png",
+				"text": "班课"
+			},
+			{
+				"pagePath": "pages/personal-center/personal-center",
+				"iconPath": "static/tabbar/personal-center.png",
+				"selectedIconPath": "static/tabbar/personal-center_cur.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": {
+		//模式配置，仅开发期间生效
+		"current": 18, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "课程签到记录0", //模式名称
+				"path": "pages/course/signIn-record-item/signIn-record-item",
+				"query": "" //启动参数
+			},
+			{
+				"name": "课程签到记录1", //模式名称
+				"path": "pages/course/signIn-record-list/signIn-record-list",
+				"query": "" //启动参数
+			},
+			{
+				"name": "该次签到详情2", //模式名称
+				"path": "pages/course/signIn-detail-teacher/signIn-detail-teacher",
+				"query": "" //启动参数
+			},
+			{
+				"name": "我的签到详情3", //模式名称
+				"path": "pages/course/signIn-detail-student/signIn-detail-student",
+				"query": "" //启动参数
+			},
+			{
+				"name": "课程详情4", //模式名称
+				"path": "pages/course/course-detail-student/course-detail-student",
+				"query": "" //启动参数
+			},
+			{
+				"name": "课程详情5", //模式名称
+				"path": "pages/course/course-detail-teacher/course-detail-teacher",
+				"query": "" //启动参数
+			},
+			{
+				"name": "加入班课6", //模式名称
+				"path": "pages/course/join-course/join-course",
+				"query": "" //启动参数
+			},
+			{
+				"name": "创建班课7", //模式名称
+				"path": "pages/course/create-course/create-course", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "修改密码8", //模式名称
+				"path": "pages/personal-center/modifypassword/modifypassword", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "修改手机号9", //模式名称
+				"path": "pages/personal-center/modifyphone/modifyphone", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "反馈10", //模式名称
+				"path": "pages/personal-center/feedback/feedback", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "关于我们11", //模式名称
+				"path": "pages/personal-center/about/about", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "首页12", //模式名称
+				"path": "pages/index/index", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "忘记密码13", //模式名称
+				"path": "pages/login/forget", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "登录14", //模式名称
+				"path": "pages/login/login", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "注册15", //模式名称
+				"path": "pages/login/register", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "个人中心16", //模式名称
+				"path": "pages/personal-center/personal-center", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "个人信息17", //模式名称
+				"path": "pages/personal-center/userinfo/userinfo", //启动页面
+				"query": "" //启动参数
+			},
+			{
+				"name": "二维码18", //模式名称
+				"path": "pages/course/qrcode/qrcode",
+				"query": "" //启动参数
+			}
+		]
+	}
+}
